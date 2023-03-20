@@ -29,7 +29,7 @@ COPY rel rel
 RUN mix release
 
 # prepare release image
-FROM alpine:3.12.0 AS app
+FROM alpine:3.15 AS app
 RUN apk add --no-cache bash build-base coreutils curl docker gzip libffi-dev openssl openssl-dev python3-dev py3-pip tar tarsnap wget zip
 
 RUN pip install --no-cache-dir --upgrade awscli gsutil
