@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:bionic
 
 ENV UBUNTU_VERSION=14.04
 
